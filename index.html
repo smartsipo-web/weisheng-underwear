@@ -446,14 +446,342 @@ products.push(...[
     "img": "images/BG26171006.png"
   }
 ]);
-let filters={brand:'全部',gender:'全部',type:'全部'},selections={},cart=[];const groups={brand:['全部','亞蘭夢藤','皮爾卡登','Balabala','FILA','PLAYBOY'],gender:['全部','男童','女童','大人','居家服'],type:['全部','三角褲','平口褲','短袖套裝','長袖套裝']};const DEFAULT_GROUPS=[{key:'group-a',name:'團購 A',discount:0.8,active:true,note:'團購活動進行中，訂單統一由業務配送。'},{key:'group-b',name:'團購 B',discount:1,active:true,note:'團購活動進行中，訂單統一由業務配送。'}];
+// 2026-09-30 Pierre Cardin products with confirmed uploaded images.
+products.push(...[
+  {
+    "id": "P1401",
+    "brand": "皮爾卡登",
+    "gender": "兒童內衣",
+    "type": "長袖上衣",
+    "name": "P1401 男童刷毛暖絨衣",
+    "price": 390,
+    "sizes": [
+      "4",
+      "6",
+      "8",
+      "10",
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "img": "images/P1401 男-刷毛暖絨衣.JPG"
+  },
+  {
+    "id": "P1402",
+    "brand": "皮爾卡登",
+    "gender": "兒童內衣",
+    "type": "保暖長褲",
+    "name": "P1402 男童刷毛暖絨褲",
+    "price": 390,
+    "sizes": [
+      "4",
+      "6",
+      "8",
+      "10",
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "img": "images/P1402 男-刷毛暖絨褲.JPG"
+  },
+  {
+    "id": "P1703",
+    "brand": "皮爾卡登",
+    "gender": "兒童內衣",
+    "type": "長袖上衣",
+    "name": "P1703 男童磨毛薄圓領衣",
+    "price": 360,
+    "sizes": [
+      "4",
+      "6",
+      "8",
+      "10",
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "img": "images/P1703 男-磨毛薄圓領衣.JPG"
+  },
+  {
+    "id": "P1711-NAVY",
+    "brand": "皮爾卡登",
+    "gender": "兒童內衣",
+    "type": "長袖上衣",
+    "name": "P1711 男童圓領發熱衣－丈青",
+    "price": 590,
+    "sizes": [
+      "4",
+      "6",
+      "8",
+      "10",
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "img": "images/P1711 男童-丈青-圓領發熱衣.png",
+    "price2": 690,
+    "priceBySize": {
+      "4": 590,
+      "6": 590,
+      "8": 590,
+      "10": 590,
+      "12": 690,
+      "14": 690,
+      "16": 690,
+      "18": 690
+    }
+  },
+  {
+    "id": "P1711-BLACK",
+    "brand": "皮爾卡登",
+    "gender": "兒童內衣",
+    "type": "長袖上衣",
+    "name": "P1711 男童圓領發熱衣－黑色",
+    "price": 590,
+    "sizes": [
+      "4",
+      "6",
+      "8",
+      "10",
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "img": "images/P1711 男童圓領發熱衣 (1).png",
+    "price2": 690,
+    "priceBySize": {
+      "4": 590,
+      "6": 590,
+      "8": 590,
+      "10": 590,
+      "12": 690,
+      "14": 690,
+      "16": 690,
+      "18": 690
+    }
+  },
+  {
+    "id": "P1712-NAVY",
+    "brand": "皮爾卡登",
+    "gender": "兒童內衣",
+    "type": "長袖上衣",
+    "name": "P1712 男童立領發熱衣－丈青",
+    "price": 590,
+    "sizes": [
+      "4",
+      "6",
+      "8",
+      "10",
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "img": "images/P1712 男童-丈青-立領發熱衣.png",
+    "price2": 690,
+    "priceBySize": {
+      "4": 590,
+      "6": 590,
+      "8": 590,
+      "10": 590,
+      "12": 690,
+      "14": 690,
+      "16": 690,
+      "18": 690
+    }
+  },
+  {
+    "id": "P1712-BLACK",
+    "brand": "皮爾卡登",
+    "gender": "兒童內衣",
+    "type": "長袖上衣",
+    "name": "P1712 男童立領發熱衣－黑色",
+    "price": 590,
+    "sizes": [
+      "4",
+      "6",
+      "8",
+      "10",
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "img": "images/P1712 男童-黑色-立領發熱衣 (1).png",
+    "price2": 690,
+    "priceBySize": {
+      "4": 590,
+      "6": 590,
+      "8": 590,
+      "10": 590,
+      "12": 690,
+      "14": 690,
+      "16": 690,
+      "18": 690
+    }
+  },
+  {
+    "id": "P2717-PINK",
+    "brand": "皮爾卡登",
+    "gender": "兒童內衣",
+    "type": "長袖上衣",
+    "name": "P2717 女童圓領發熱衣－粉色",
+    "price": 590,
+    "sizes": [
+      "4",
+      "6",
+      "8",
+      "10",
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "img": "images/P2717 女童-粉色-圓領發熱衣.png",
+    "price2": 690,
+    "priceBySize": {
+      "4": 590,
+      "6": 590,
+      "8": 590,
+      "10": 590,
+      "12": 690,
+      "14": 690,
+      "16": 690,
+      "18": 690
+    }
+  },
+  {
+    "id": "P2717-BLACK",
+    "brand": "皮爾卡登",
+    "gender": "兒童內衣",
+    "type": "長袖上衣",
+    "name": "P2717 女童圓領發熱衣－黑色",
+    "price": 590,
+    "sizes": [
+      "4",
+      "6",
+      "8",
+      "10",
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "img": "images/P2717 女童-黑色-圓領發熱衣.png",
+    "price2": 690,
+    "priceBySize": {
+      "4": 590,
+      "6": 590,
+      "8": 590,
+      "10": 590,
+      "12": 690,
+      "14": 690,
+      "16": 690,
+      "18": 690
+    }
+  },
+  {
+    "id": "P2719-PINK",
+    "brand": "皮爾卡登",
+    "gender": "兒童內衣",
+    "type": "長袖上衣",
+    "name": "P2719 女童立領發熱衣－粉色",
+    "price": 590,
+    "sizes": [
+      "4",
+      "6",
+      "8",
+      "10",
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "img": "images/P2719 女童-粉色-立領發熱衣.png",
+    "price2": 690,
+    "priceBySize": {
+      "4": 590,
+      "6": 590,
+      "8": 590,
+      "10": 590,
+      "12": 690,
+      "14": 690,
+      "16": 690,
+      "18": 690
+    }
+  },
+  {
+    "id": "P2719-BLACK",
+    "brand": "皮爾卡登",
+    "gender": "兒童內衣",
+    "type": "長袖上衣",
+    "name": "P2719 女童立領發熱衣－黑色",
+    "price": 590,
+    "sizes": [
+      "4",
+      "6",
+      "8",
+      "10",
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "img": "images/P2719 女童-黑色-立領發熱衣.png",
+    "price2": 690,
+    "priceBySize": {
+      "4": 590,
+      "6": 590,
+      "8": 590,
+      "10": 590,
+      "12": 690,
+      "14": 690,
+      "16": 690,
+      "18": 690
+    }
+  },
+  {
+    "id": "P511-BLACK",
+    "brand": "皮爾卡登",
+    "gender": "大人",
+    "type": "長袖上衣",
+    "name": "P511 女膠原蛋白衫－黑色",
+    "price": 690,
+    "sizes": [
+      "L",
+      "M",
+      "XL"
+    ],
+    "img": "images/P511 $690 女-黑色-膠原蛋白衫.png"
+  },
+  {
+    "id": "P511-BEIGE",
+    "brand": "皮爾卡登",
+    "gender": "大人",
+    "type": "長袖上衣",
+    "name": "P511 女膠原蛋白衫－米色",
+    "price": 690,
+    "sizes": [
+      "L",
+      "M",
+      "XL"
+    ],
+    "img": "images/P511 $690 女-米色-膠原蛋白衫.png"
+  }
+]);
+let filters={brand:'全部',gender:'全部',type:'全部'},selections={},cart=[];const groups={brand:['全部','亞蘭夢藤','皮爾卡登','Balabala','FILA','PLAYBOY'],gender:['全部','男童','女童','兒童內衣','大人','居家服'],type:['全部','三角褲','平口褲','短袖套裝','長袖套裝','長袖上衣','保暖長褲']};const DEFAULT_GROUPS=[{key:'group-a',name:'團購 A',discount:0.8,active:true,note:'團購活動進行中，訂單統一由業務配送。'},{key:'group-b',name:'團購 B',discount:1,active:true,note:'團購活動進行中，訂單統一由業務配送。'}];
 let groupConfigs=[...DEFAULT_GROUPS],generalActivityCloud='目前無特別活動。';
 function loadGroupConfigs(){return groupConfigs}
 function loadGeneralActivity(){return generalActivityCloud||'目前無特別活動。'}
 async function saveGeneralActivity(){try{await adminApi('POST',{action:'general_activity',value:generalActivityNote.value.trim()});generalActivityCloud=generalActivityNote.value.trim()||'';renderActivity();alert('一般客戶活動備註已儲存到雲端')}catch(e){alert('儲存失敗：'+e.message)}}
 const params=new URLSearchParams(location.search);const sourceKey=params.get('source')||'general';let currentGroup=groupConfigs.find(g=>g.key===sourceKey&&g.active!==false);let orderSource=sourceKey==='general'?'一般客戶':(currentGroup?currentGroup.name:'無效團購入口');let discountRate=sourceKey==='general'?1:(currentGroup?Number(currentGroup.discount)||1:1);let isGroup=sourceKey!=='general'&&!!currentGroup;let invalidGroup=sourceKey!=='general'&&!currentGroup;function discountLabel(rate){const x=Math.round(Number(rate)*1000)/100;return Number.isInteger(x)?String(x):String(x).replace(/0+$/,'').replace(/\.$/,'')}function renderActivity(){if(invalidGroup){activityName.textContent='團購入口無效';activityDiscount.style.display='none';activityNote.className='activitynote';activityNote.textContent='此團購連結不存在或已停用，請向偉聖內衣公司索取新的連結。';return}if(isGroup){activityName.textContent=currentGroup.name;activityDiscount.style.display=discountRate>0&&discountRate<1?'inline-block':'none';activityDiscount.textContent=discountRate>0&&discountRate<1?'一般商品 '+discountLabel(discountRate)+' 折（固定特價除外）':'';activityNote.className='activitynote';activityNote.textContent=(currentGroup.note||'團購活動進行中，訂單統一由業務配送。')}else{activityName.textContent='活動備註';activityDiscount.style.display='none';activityNote.className='activitynote general';activityNote.textContent=loadGeneralActivity()}}
 function initSource(){sourceTitle.textContent=orderSource+' 專屬訂購入口';if(invalidGroup){sourceHint.textContent='此團購連結不存在或已停用，請向偉聖內衣公司索取新的連結。';sourceBar.classList.add('group');renderActivity();return}sourceHint.textContent=sourceKey==='general'?'訂單來源會記錄為「一般客戶」':'此連結送出的訂單會自動標記為「'+orderSource+'」'+(discountRate>0&&discountRate<1?'・一般商品 '+discountLabel(discountRate)+' 折':'')+'・僅限業務配送';sourceBar.classList.toggle('group',sourceKey!=='general');renderActivity()}
-let activeSkus=null;let stockMap={};function stockKey(sku,size){return sku+'::'+size}function stockQty(sku,size){const k=stockKey(sku,size);return Object.prototype.hasOwnProperty.call(stockMap,k)?Number(stockMap[k]):(products.find(p=>p.id===sku)?.fixedPrice?0:null)}function cartQtyFor(sku,size){return cart.filter(x=>x.id===sku&&x.size===size).reduce((a,x)=>a+Number(x.qty||0),0)}function remainingStock(sku,size){const q=stockQty(sku,size);return q===null?null:Math.max(0,q-cartQtyFor(sku,size))}function makeChips(){Object.keys(groups).forEach(k=>{document.getElementById(k+'Chips').innerHTML=groups[k].map(v=>`<button class="chip ${filters[k]===v?'on':''}" onclick="setFilter('${k}','${v}')">${v}</button>`).join('')})}function setFilter(k,v){filters[k]=v;makeChips();render()}function selectSize(id,s){if(invalidGroup)return;const stock=remainingStock(id,s);if(stock!==null&&stock<=0)return;selections[id]=selections[id]||{size:null,qty:1};selections[id].size=s;selections[id].qty=Math.min(Math.max(1,selections[id].qty||1),stock===null?999:Math.max(1,stock));render()}function changeQty(id,d){if(invalidGroup)return;selections[id]=selections[id]||{size:null,qty:1};const sel=selections[id],stock=sel.size?remainingStock(id,sel.size):null,max=stock===null?999:Math.max(1,stock);sel.qty=Math.min(max,Math.max(1,sel.qty+d));render()}function addToCart(id){if(invalidGroup){alert('此團購連結已停用');return}const p=products.find(x=>x.id===id),s=selections[id];if(!p||!activeSkus?.has(id)||!s||!s.size)return;const available=remainingStock(id,s.size);if(available!==null&&available<=0){alert('此尺寸目前已售完');render();return}if(available!==null&&s.qty>available){alert('此尺寸庫存不足，最多還可訂 '+available+' 組');s.qty=Math.max(1,available);render();return}const e=cart.find(x=>x.id===id&&x.size===s.size);if(e)e.qty+=s.qty;else cart.push({...p,size:s.size,qty:s.qty});s.qty=1;updateCart();render()}function render(){if(activeSkus===null){resultCount.textContent='';grid.innerHTML='<div class="empty">商品資料載入失敗，請稍後重試。<br><button class="chip" onclick="boot()">重新載入</button></div>';return}const q=search.value.trim().toLowerCase();const list=products.filter(p=>activeSkus.has(p.id)&&(filters.brand==='全部'||p.brand===filters.brand)&&(filters.gender==='全部'||p.gender===filters.gender)&&(filters.type==='全部'||p.type===filters.type)&&(!q||(p.id+p.name+p.brand).toLowerCase().includes(q)));resultCount.textContent=`${list.length} 款`;grid.innerHTML=list.length?list.map(p=>{const s=selections[p.id]||{size:null,qty:1};const selectedBase=s.size?itemBasePrice({...p,size:s.size}):null;const basePrice=selectedBase!=null?`NT$ ${selectedBase}`:(p.price2?`NT$ ${p.price}～${p.price2}`:`NT$ ${p.price}`);const dp=selectedBase!=null?Math.round(selectedBase*discountRate):Math.round(p.price*discountRate),dp2=selectedBase!=null?null:(p.price2?Math.round(p.price2*discountRate):null);const price=p.fixedPrice?`${p.listPrice?`<del>NT$ ${p.listPrice}</del> `:""}特價 ${basePrice}<span class="discountbadge">固定特價</span>`:isGroup&&discountRate<1?`<del>${basePrice}</del> NT$ ${dp}${dp2?'～'+dp2:''}<span class="discountbadge">${discountLabel(discountRate)}折</span>`:basePrice;return `<article class="card"><div class="photo"><img src="${p.img}" alt="${p.id}" loading="lazy"><div class="tag">${p.brand} · ${p.gender}</div></div><div class="body"><div class="meta">${p.id} · ${p.type}</div><div class="title">${p.name}</div><div class="price">${price}</div>${p.fixedPrice?'<div class="stockline">固定特價，不另計團購折扣</div>':p.gender==='居家服'?'':`<a class="size-guide-link" href="#size-guide" onclick="showProductSizeGuide('${p.gender}','${p.type}','${p.brand}')">查看尺寸指南</a>`}<div class="sizes">${p.sizes.map(z=>{const q=remainingStock(p.id,z),sold=q!==null&&q<=0;return `<button class="size ${s.size===z?'sel':''} ${sold?'soldout':''}" ${invalidGroup||sold?'disabled':''} title="${sold?'售完':(q===null?'可預訂':'有貨')}" onclick="selectSize('${p.id}','${z}')">${z}${sold?' 售罄':''}</button>`}).join('')}</div>${(()=>{const tracked=p.sizes.some(z=>stockQty(p.id,z)!==null),q=s.size?remainingStock(p.id,s.size):null;if(!tracked)return '';if(s.size&&q!==null)return `<div class="stockline ${q<=0?'soldout':''}">尺寸 ${s.size}：${q>0?'有貨':'售完'}</div>`;return `<div class="stockline">庫存已同步・灰色尺寸為售完</div>`})()}<div class="qtyrow"><div class="qty"><button onclick="changeQty('${p.id}',-1)">−</button><span>${s.qty}</span><button onclick="changeQty('${p.id}',1)">＋</button></div><button class="add" ${invalidGroup||!s.size||(s.size&&remainingStock(p.id,s.size)===0)?'disabled':''} onclick="addToCart('${p.id}')">${invalidGroup?'連結已失效':(s.size?(remainingStock(p.id,s.size)===0?'已售完':'加入訂單'):'先選尺寸')}</button></div></div></article>`}).join(''):`<div class="empty">沒有符合條件的商品</div>`}function updateCart(){const c=cart.reduce((a,x)=>a+x.qty,0),t=cartTotal();navCount.textContent=c;dockCount.textContent=c;dockTotal.textContent=t.toLocaleString();sheetTotal.textContent=t.toLocaleString();cartLines.innerHTML=cart.length?cart.map(x=>`<div class="line"><b>${x.brand}｜${x.id}</b><br>${x.type}・尺寸 ${x.size}・${x.qty} 組<br>單價 NT$ ${itemSellPrice(x).toLocaleString()}${x.fixedPrice?'（固定特價）':''}・小計 NT$ ${(x.qty*itemSellPrice(x)).toLocaleString()}</div>`).join(''):'<div class="empty">目前還沒有商品</div>';if(typeof updateDeliveryUI==='function')updateDeliveryUI()}function openCart(){updateCart();drawer.classList.add('open')}function closeCart(){drawer.classList.remove('open')}let delivery='sales';function itemBasePrice(x){if(x.fixedPrice&&x.size&&Object.prototype.hasOwnProperty.call(x.priceBySize||{},x.size))return x.priceBySize[x.size];if(x.id==='A3607-1'){const n=Number(x.size);return n===18?330:(n>=12?310:260)}if(x.id==='P142211'){const n=Number(x.size);return n===22?480:(n>=16?420:360)}if(x.brand==='皮爾卡登'&&['P1002','P142212','P142221'].includes(x.id)){const n=Number(x.size);return n>=16?420:360}return x.price}function itemSellPrice(x){return Math.round(itemBasePrice(x)*(x.fixedPrice?1:discountRate))}function cartTotal(){return cart.reduce((a,x)=>a+x.qty*itemSellPrice(x),0)}function setDelivery(v){if(isGroup&&v==='ship'){alert('團購訂單統一由業務配送');return}if(v==='ship'&&cartTotal()<4000){alert('郵寄需訂單定價滿 NT$ 4,000');return}delivery=v;updateDeliveryUI()}function updateDeliveryUI(){if(isGroup){delivery='sales';shipBtn.style.display='none';salesBtn.classList.add('on');shipNote.textContent='團購訂單統一由業務配送，不提供郵寄。';return}shipBtn.style.display='';const ok=cartTotal()>=4000;shipBtn.disabled=!ok;if(!ok&&delivery==='ship')delivery='sales';salesBtn.classList.toggle('on',delivery==='sales');shipBtn.classList.toggle('on',delivery==='ship');shipNote.textContent=ok?'本單已滿 NT$ 4,000，可選擇「業務配送」或「郵寄」。':'一般訂單由業務配送；訂單定價滿 NT$ 4,000 可選擇郵寄。'}function submitOrder(){if(invalidGroup){alert('此團購連結已失效，請向偉聖內衣公司索取新連結。');return}const name=customerName.value.trim();if(!cart.length){alert('請先加入商品');return}if(!name){alert('請填寫客戶名稱');return}if(isGroup)delivery='sales';if(delivery==='ship'&&cartTotal()<4000){alert('郵寄需訂單定價滿 NT$ 4,000');return}cfSource.textContent=orderSource+(isGroup&&discountRate>0&&discountRate<1?'（一般商品 '+discountLabel(discountRate)+' 折；固定特價商品除外）':'');cfName.textContent=name;cfContact.textContent=customerContact.value.trim();cfDelivery.textContent=delivery==='ship'?'郵寄':'業務配送';cfCount.textContent=cart.reduce((a,x)=>a+x.qty,0)+' 件';cfTotal.textContent=cartTotal().toLocaleString();cfLines.innerHTML=cart.map(x=>`<div class="orderitem"><div><b>${x.brand}｜${x.id}</b><small>${x.gender}・${x.type}・尺寸 ${x.size}</small></div><div style="text-align:right"><b>${x.qty} 組</b><small>NT$ ${(x.qty*itemSellPrice(x)).toLocaleString()}</small></div></div>`).join('');drawer.classList.remove('open');confirmView.classList.add('open');document.body.style.overflow='hidden'}function closeConfirm(){confirmView.classList.remove('open');document.body.style.overflow='';drawer.classList.add('open')}async function finalSubmit(){const btn=document.querySelector('.finalbtn');if(btn.disabled)return;btn.disabled=true;const oldText=btn.textContent;btn.textContent='訂單送出中…';const order={source_key:sourceKey,source:orderSource,discount_rate:discountRate,customer_name:customerName.value.trim(),customer_contact:customerContact.value.trim(),delivery:delivery==='ship'?'郵寄':'業務配送',items:cart.map(x=>({sku:x.id,brand:x.brand,product_name:x.name,size:x.size,qty:x.qty,unit_price:itemSellPrice(x)}))};try{const r=await fetch('https://dgkigykovxuvdveldcvv.supabase.co/functions/v1/submit-order',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(order)});const data=await r.json();if(!r.ok||!data.success)throw new Error(data.error||'submit_failed');alert('訂單已建立：'+data.order_no+'\n來源：'+order.source+'\n客戶：'+order.customer_name+'\n總件數：'+data.count+' 件\n總定價：NT$ '+Number(data.total).toLocaleString()+'\n\n⚠ 此為預購單，實際商品數量以出貨為主。');cart=[];customerName.value='';customerContact.value='';delivery='sales';confirmView.classList.remove('open');document.body.style.overflow='';await loadPublicCloudConfig();initSource();updateCart();render()}catch(e){console.error(e);const msg=String(e&&e.message||'');if(msg.includes('insufficient_stock')){await loadPublicCloudConfig();render();alert('部分商品庫存剛剛已被其他訂單訂走，請重新確認售完尺寸後再送出。')}else alert('訂單送出失敗，請檢查網路後再試一次。\n若持續發生，請聯絡偉聖內衣。')}finally{btn.disabled=false;btn.textContent=oldText}}
+let activeSkus=null;let stockMap={};function stockKey(sku,size){return sku+'::'+size}function stockQty(sku,size){const k=stockKey(sku,size);return Object.prototype.hasOwnProperty.call(stockMap,k)?Number(stockMap[k]):(products.find(p=>p.id===sku)?.fixedPrice?0:null)}function cartQtyFor(sku,size){return cart.filter(x=>x.id===sku&&x.size===size).reduce((a,x)=>a+Number(x.qty||0),0)}function remainingStock(sku,size){const q=stockQty(sku,size);return q===null?null:Math.max(0,q-cartQtyFor(sku,size))}function makeChips(){Object.keys(groups).forEach(k=>{document.getElementById(k+'Chips').innerHTML=groups[k].map(v=>`<button class="chip ${filters[k]===v?'on':''}" onclick="setFilter('${k}','${v}')">${v}</button>`).join('')})}function setFilter(k,v){filters[k]=v;makeChips();render()}function selectSize(id,s){if(invalidGroup)return;const stock=remainingStock(id,s);if(stock!==null&&stock<=0)return;selections[id]=selections[id]||{size:null,qty:1};selections[id].size=s;selections[id].qty=Math.min(Math.max(1,selections[id].qty||1),stock===null?999:Math.max(1,stock));render()}function changeQty(id,d){if(invalidGroup)return;selections[id]=selections[id]||{size:null,qty:1};const sel=selections[id],stock=sel.size?remainingStock(id,sel.size):null,max=stock===null?999:Math.max(1,stock);sel.qty=Math.min(max,Math.max(1,sel.qty+d));render()}function addToCart(id){if(invalidGroup){alert('此團購連結已停用');return}const p=products.find(x=>x.id===id),s=selections[id];if(!p||!activeSkus?.has(id)||!s||!s.size)return;const available=remainingStock(id,s.size);if(available!==null&&available<=0){alert('此尺寸目前已售完');render();return}if(available!==null&&s.qty>available){alert('此尺寸庫存不足，最多還可訂 '+available+' 組');s.qty=Math.max(1,available);render();return}const e=cart.find(x=>x.id===id&&x.size===s.size);if(e)e.qty+=s.qty;else cart.push({...p,size:s.size,qty:s.qty});s.qty=1;updateCart();render()}function render(){if(activeSkus===null){resultCount.textContent='';grid.innerHTML='<div class="empty">商品資料載入失敗，請稍後重試。<br><button class="chip" onclick="boot()">重新載入</button></div>';return}const q=search.value.trim().toLowerCase();const list=products.filter(p=>activeSkus.has(p.id)&&(filters.brand==='全部'||p.brand===filters.brand)&&(filters.gender==='全部'||p.gender===filters.gender)&&(filters.type==='全部'||p.type===filters.type)&&(!q||(p.id+p.name+p.brand).toLowerCase().includes(q)));resultCount.textContent=`${list.length} 款`;grid.innerHTML=list.length?list.map(p=>{const s=selections[p.id]||{size:null,qty:1};const selectedBase=s.size?itemBasePrice({...p,size:s.size}):null;const basePrice=selectedBase!=null?`NT$ ${selectedBase}`:(p.price2?`NT$ ${p.price}～${p.price2}`:`NT$ ${p.price}`);const dp=selectedBase!=null?Math.round(selectedBase*discountRate):Math.round(p.price*discountRate),dp2=selectedBase!=null?null:(p.price2?Math.round(p.price2*discountRate):null);const price=p.fixedPrice?`${p.listPrice?`<del>NT$ ${p.listPrice}</del> `:""}特價 ${basePrice}<span class="discountbadge">固定特價</span>`:isGroup&&discountRate<1?`<del>${basePrice}</del> NT$ ${dp}${dp2?'～'+dp2:''}<span class="discountbadge">${discountLabel(discountRate)}折</span>`:basePrice;return `<article class="card"><div class="photo"><img src="${p.img}" alt="${p.id}" loading="lazy"><div class="tag">${p.brand} · ${p.gender}</div></div><div class="body"><div class="meta">${p.id} · ${p.type}</div><div class="title">${p.name}</div><div class="price">${price}</div>${p.fixedPrice?'<div class="stockline">固定特價，不另計團購折扣</div>':(p.gender==='居家服'||p.gender==='兒童內衣'||p.type==='長袖上衣')?'':`<a class="size-guide-link" href="#size-guide" onclick="showProductSizeGuide('${p.gender}','${p.type}','${p.brand}')">查看尺寸指南</a>`}<div class="sizes">${p.sizes.map(z=>{const q=remainingStock(p.id,z),sold=q!==null&&q<=0;return `<button class="size ${s.size===z?'sel':''} ${sold?'soldout':''}" ${invalidGroup||sold?'disabled':''} title="${sold?'售完':(q===null?'可預訂':'有貨')}" onclick="selectSize('${p.id}','${z}')">${z}${sold?' 售罄':''}</button>`}).join('')}</div>${(()=>{const tracked=p.sizes.some(z=>stockQty(p.id,z)!==null),q=s.size?remainingStock(p.id,s.size):null;if(!tracked)return '';if(s.size&&q!==null)return `<div class="stockline ${q<=0?'soldout':''}">尺寸 ${s.size}：${q>0?'有貨':'售完'}</div>`;return `<div class="stockline">庫存已同步・灰色尺寸為售完</div>`})()}<div class="qtyrow"><div class="qty"><button onclick="changeQty('${p.id}',-1)">−</button><span>${s.qty}</span><button onclick="changeQty('${p.id}',1)">＋</button></div><button class="add" ${invalidGroup||!s.size||(s.size&&remainingStock(p.id,s.size)===0)?'disabled':''} onclick="addToCart('${p.id}')">${invalidGroup?'連結已失效':(s.size?(remainingStock(p.id,s.size)===0?'已售完':'加入訂單'):'先選尺寸')}</button></div></div></article>`}).join(''):`<div class="empty">沒有符合條件的商品</div>`}function updateCart(){const c=cart.reduce((a,x)=>a+x.qty,0),t=cartTotal();navCount.textContent=c;dockCount.textContent=c;dockTotal.textContent=t.toLocaleString();sheetTotal.textContent=t.toLocaleString();cartLines.innerHTML=cart.length?cart.map(x=>`<div class="line"><b>${x.brand}｜${x.id}</b><br>${x.type}・尺寸 ${x.size}・${x.qty} 組<br>單價 NT$ ${itemSellPrice(x).toLocaleString()}${x.fixedPrice?'（固定特價）':''}・小計 NT$ ${(x.qty*itemSellPrice(x)).toLocaleString()}</div>`).join(''):'<div class="empty">目前還沒有商品</div>';if(typeof updateDeliveryUI==='function')updateDeliveryUI()}function openCart(){updateCart();drawer.classList.add('open')}function closeCart(){drawer.classList.remove('open')}let delivery='sales';function itemBasePrice(x){if(x.size&&Object.prototype.hasOwnProperty.call(x.priceBySize||{},x.size))return x.priceBySize[x.size];if(x.id==='A3607-1'){const n=Number(x.size);return n===18?330:(n>=12?310:260)}if(x.id==='P142211'){const n=Number(x.size);return n===22?480:(n>=16?420:360)}if(x.brand==='皮爾卡登'&&['P1002','P142212','P142221'].includes(x.id)){const n=Number(x.size);return n>=16?420:360}return x.price}function itemSellPrice(x){return Math.round(itemBasePrice(x)*(x.fixedPrice?1:discountRate))}function cartTotal(){return cart.reduce((a,x)=>a+x.qty*itemSellPrice(x),0)}function setDelivery(v){if(isGroup&&v==='ship'){alert('團購訂單統一由業務配送');return}if(v==='ship'&&cartTotal()<4000){alert('郵寄需訂單定價滿 NT$ 4,000');return}delivery=v;updateDeliveryUI()}function updateDeliveryUI(){if(isGroup){delivery='sales';shipBtn.style.display='none';salesBtn.classList.add('on');shipNote.textContent='團購訂單統一由業務配送，不提供郵寄。';return}shipBtn.style.display='';const ok=cartTotal()>=4000;shipBtn.disabled=!ok;if(!ok&&delivery==='ship')delivery='sales';salesBtn.classList.toggle('on',delivery==='sales');shipBtn.classList.toggle('on',delivery==='ship');shipNote.textContent=ok?'本單已滿 NT$ 4,000，可選擇「業務配送」或「郵寄」。':'一般訂單由業務配送；訂單定價滿 NT$ 4,000 可選擇郵寄。'}function submitOrder(){if(invalidGroup){alert('此團購連結已失效，請向偉聖內衣公司索取新連結。');return}const name=customerName.value.trim();if(!cart.length){alert('請先加入商品');return}if(!name){alert('請填寫客戶名稱');return}if(isGroup)delivery='sales';if(delivery==='ship'&&cartTotal()<4000){alert('郵寄需訂單定價滿 NT$ 4,000');return}cfSource.textContent=orderSource+(isGroup&&discountRate>0&&discountRate<1?'（一般商品 '+discountLabel(discountRate)+' 折；固定特價商品除外）':'');cfName.textContent=name;cfContact.textContent=customerContact.value.trim();cfDelivery.textContent=delivery==='ship'?'郵寄':'業務配送';cfCount.textContent=cart.reduce((a,x)=>a+x.qty,0)+' 件';cfTotal.textContent=cartTotal().toLocaleString();cfLines.innerHTML=cart.map(x=>`<div class="orderitem"><div><b>${x.brand}｜${x.id}</b><small>${x.gender}・${x.type}・尺寸 ${x.size}</small></div><div style="text-align:right"><b>${x.qty} 組</b><small>NT$ ${(x.qty*itemSellPrice(x)).toLocaleString()}</small></div></div>`).join('');drawer.classList.remove('open');confirmView.classList.add('open');document.body.style.overflow='hidden'}function closeConfirm(){confirmView.classList.remove('open');document.body.style.overflow='';drawer.classList.add('open')}async function finalSubmit(){const btn=document.querySelector('.finalbtn');if(btn.disabled)return;btn.disabled=true;const oldText=btn.textContent;btn.textContent='訂單送出中…';const order={source_key:sourceKey,source:orderSource,discount_rate:discountRate,customer_name:customerName.value.trim(),customer_contact:customerContact.value.trim(),delivery:delivery==='ship'?'郵寄':'業務配送',items:cart.map(x=>({sku:x.id,brand:x.brand,product_name:x.name,size:x.size,qty:x.qty,unit_price:itemSellPrice(x)}))};try{const r=await fetch('https://dgkigykovxuvdveldcvv.supabase.co/functions/v1/submit-order',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(order)});const data=await r.json();if(!r.ok||!data.success)throw new Error(data.error||'submit_failed');alert('訂單已建立：'+data.order_no+'\n來源：'+order.source+'\n客戶：'+order.customer_name+'\n總件數：'+data.count+' 件\n總定價：NT$ '+Number(data.total).toLocaleString()+'\n\n⚠ 此為預購單，實際商品數量以出貨為主。');cart=[];customerName.value='';customerContact.value='';delivery='sales';confirmView.classList.remove('open');document.body.style.overflow='';await loadPublicCloudConfig();initSource();updateCart();render()}catch(e){console.error(e);const msg=String(e&&e.message||'');if(msg.includes('insufficient_stock')){await loadPublicCloudConfig();render();alert('部分商品庫存剛剛已被其他訂單訂走，請重新確認售完尺寸後再送出。')}else alert('訂單送出失敗，請檢查網路後再試一次。\n若持續發生，請聯絡偉聖內衣。')}finally{btn.disabled=false;btn.textContent=oldText}}
 function groupBaseUrl(key){const u=new URL(location.href);u.searchParams.set('source',key);u.searchParams.delete('admin');return u.href}
 function slugifyGroup(s){let x=(s||'').trim().toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9\u4e00-\u9fff-]/g,'').replace(/-+/g,'-').replace(/^-|-$/g,'');if(!x)x=Date.now().toString(36).slice(-8);if(!x.startsWith('group-'))x='group-'+x;return x.slice(0,50)}
 function saveGroups(){}
