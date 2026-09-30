@@ -774,6 +774,61 @@ products.push(...[
     "img": "images/P511 $690 女-米色-膠原蛋白衫.png"
   }
 ]);
+// 2026-09-30 P501 collagen tops, two confirmed colors.
+products.push(...[
+  {
+    "id": "P501-BEIGE",
+    "brand": "皮爾卡登",
+    "gender": "兒童內衣",
+    "type": "長袖上衣",
+    "name": "P501 男童膠原蛋白衫－米色",
+    "price": 590,
+    "price2": 690,
+    "sizes": [
+      "6",
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "priceBySize": {
+      "6": 590,
+      "8": 590,
+      "10": 590,
+      "12": 690,
+      "14": 690,
+      "16": 690
+    },
+    "img": "images/P501 男童-米色-膠原蛋白.jpg"
+  },
+  {
+    "id": "P501-BLACK",
+    "brand": "皮爾卡登",
+    "gender": "兒童內衣",
+    "type": "長袖上衣",
+    "name": "P501 男童膠原蛋白衫－黑色",
+    "price": 590,
+    "price2": 690,
+    "sizes": [
+      "6",
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "priceBySize": {
+      "6": 590,
+      "8": 590,
+      "10": 590,
+      "12": 690,
+      "14": 690,
+      "16": 690
+    },
+    "img": "images/P501 男童-黑色 膠原蛋白-.jpg"
+  }
+]);
 let filters={brand:'全部',gender:'全部',type:'全部'},selections={},cart=[];const groups={brand:['全部','亞蘭夢藤','皮爾卡登','Balabala','FILA','PLAYBOY'],gender:['全部','男童','女童','兒童內衣','大人','居家服'],type:['全部','三角褲','平口褲','短袖套裝','長袖套裝','長袖上衣','保暖長褲']};const DEFAULT_GROUPS=[{key:'group-a',name:'團購 A',discount:0.8,active:true,note:'團購活動進行中，訂單統一由業務配送。'},{key:'group-b',name:'團購 B',discount:1,active:true,note:'團購活動進行中，訂單統一由業務配送。'}];
 let groupConfigs=[...DEFAULT_GROUPS],generalActivityCloud='目前無特別活動。';
 function loadGroupConfigs(){return groupConfigs}
